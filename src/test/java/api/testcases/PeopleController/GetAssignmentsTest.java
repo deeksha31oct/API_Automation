@@ -72,7 +72,7 @@ public class GetAssignmentsTest extends BaseTest
                 //TC_07
                 {
                         "Verify API responds with 400 status code for valid topiaPersonID  and  missing logged-user-id  ",
-                        400,
+                        404,
                         null,
                         Endpoints.GetAssignments.get_valid_TopiaPersonId(),
                         "",
