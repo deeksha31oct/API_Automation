@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="2">
+    <listeners>
+        <listener class-name="api.utilities.ExtentListenerClass"/>
+    </listeners>
+    <test preserve-order="true" name="Topia_API_Automation">
+        <classes>
+            <class name="api.testcases.CostEstimateController.SpendestimatedasyncGetTests">
+                <methods>
+                    <include name="testCostEstimateApiWithMoveId"/>
+                </methods>
+            </class>
+            <class name="api.testcases.UserController.TopiaPersonIdGetTest">
+                <methods>
+                    <include name="UserControllerWithTopiaPersonId"/>
+                </methods>
+            </class>
+            <class name="api.testcases.FeatureToggleController.GetUIFeatureTogglesGetTest">
+                <methods>
+                    <include name="featureToggleControllerWithPersonId"/>
+                </methods>
+            </class>
+            <class name="api.testcases.SavedSearchController.GetSavesSearchesForViewTableGetTest">
+                <methods>
+                    <include name="savedSearchControllerTest"/>
+                </methods>
+            </class>
+            <class name="api.testcases.EmployeeController.GetPersonProfileImageGetTest">
+                <methods>
+                    <include name="ProfileImageRetrieval"/>
+                </methods>
+            </class>
+            <class name="api.testcases.DovController.DovGETTests">
+                <methods>
+                    <include name="testDovControllerGets"/>
+                </methods>
+            </class>
+            <class name="api.testcases.PeopleListController.GetLeftmenuPermissionsGetTest">
+                <methods>
+                    <include name="testPermissionController"/>
+                </methods>
+            </class>
+			<class name="api.testcases.PermissionsController.GetSavedSearchesGetTest">
+                <methods>
+                    <include name="savedSearchesTest"/>
+                </methods>
+            </class>
+            <class name="api.testcases.TaskFullControllerTaskCategoriesTest">
+                <methods>
+                    <include name="taskFullControllerTest"/>
+                </methods>
+            </class>
+			<class name="api.testcases.MoveController.GetPeopleDetailGetTest">
+                <methods>
+                    <include name="moveControllerGetPeopleDetail"/>
+                </methods>
+            </class>
+            <class name="api.testcases.MoveController.GetDetailsForEmployeeInDetailsTabGetTest">
+                <methods>
+                    <include name="moveControllerGetDetailsForEmployeeInDetailsTab"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

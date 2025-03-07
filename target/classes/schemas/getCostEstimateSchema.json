@@ -1,0 +1,231 @@
+{
+  "type": "object",
+  "properties": {
+    "displayCurrency": {
+      "type": "string"
+    },
+    "spend": {
+      "type": "object",
+      "properties": {
+        "moveId": {
+          "type": "string"
+        },
+        "currencyCode": {
+          "type": "boolean"
+        },
+        "totalMoveSpend": {
+          "type": "number"
+        },
+        "moveStagesActualSpend": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "moveStageCode": {
+                  "type": "string"
+                },
+                "moveStageName": {
+                  "type": "string"
+                },
+                "totalSpend": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "moveStageCode",
+                "moveStageName",
+                "totalSpend"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "moveStageCode": {
+                  "type": "string"
+                },
+                "moveStageName": {
+                  "type": "string"
+                },
+                "totalSpend": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "moveStageCode",
+                "moveStageName",
+                "totalSpend"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "moveId",
+        "currencyCode",
+        "totalMoveSpend",
+        "moveStagesActualSpend"
+      ]
+    },
+    "estimated": {
+      "type": "object",
+      "properties": {
+        "moveId": {
+          "type": "integer"
+        },
+        "costEstimateId": {
+          "type": "string"
+        },
+        "costEstimateVersionId": {
+          "type": "string"
+        },
+        "displayCurrency": {
+          "type": "string"
+        },
+        "sliderSections": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "string"
+                },
+                "sliderItems": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "benefitCode": {
+                          "type": "string"
+                        },
+                        "displayName": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "benefitCode",
+                        "displayName",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "benefitCode": {
+                          "type": "string"
+                        },
+                        "displayName": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "benefitCode",
+                        "displayName",
+                        "amount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "code",
+                "name",
+                "order",
+                "sliderItems"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "string"
+                },
+                "sliderItems": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "benefitCode": {
+                          "type": "string"
+                        },
+                        "displayName": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "benefitCode",
+                        "displayName",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "benefitCode": {
+                          "type": "string"
+                        },
+                        "displayName": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "benefitCode",
+                        "displayName",
+                        "amount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "code",
+                "name",
+                "order",
+                "sliderItems"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "moveId",
+        "costEstimateId",
+        "costEstimateVersionId",
+        "displayCurrency",
+        "sliderSections"
+      ]
+    }
+  },
+  "required": [
+    "displayCurrency",
+    "spend",
+    "estimated"
+  ]
+}

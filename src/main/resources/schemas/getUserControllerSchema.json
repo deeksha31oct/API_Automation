@@ -1,0 +1,239 @@
+{
+  "ValidPersonIdAndCustomerCode": {
+    "type": "object",
+    "properties": {
+      "userpassword": {
+        "type": "string"
+      }, "authmodeprecedence": {
+        "type": "integer"
+      },
+      "languagecode": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "testuserflag": {
+        "type": "boolean"
+      },
+      "gouserid": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "dateofdeath": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "worklocation": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "gendercode": {
+        "type": "string"
+      },
+      "profileimagedocumentid": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "secondarynationalitycountryname": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "userlockedflag": {
+        "type": "boolean"
+      },
+      "businesstitle": {
+        "type": "string"
+      },
+      "emailaddress": {
+        "type": "string",
+        "format": "email"
+      },
+      "placeofbirth": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "lastnamefirst": {
+        "type": "string"
+      },
+      "personprefix": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "lastname": {
+        "type": "string"
+      },
+      "personsuffix": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "tertiarynationalitycountrycode": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "mustaccepteulaflag": {
+        "type": "boolean"
+      },
+      "authmodecode": {
+        "type": "string"
+      },
+      "guid": {
+        "type": "string"
+      },
+      "maidenname": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "partyid": {
+        "type": "integer"
+      },
+      "firstname": {
+        "type": "string"
+      },
+      "preferredpronounname": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "maritalstatusdesc": {
+        "type": "string"
+      },
+      "authmodebitvalue": {
+        "type": "integer"
+      },
+      "employeeid": {
+        "type": "string"
+      },
+      "nationalitycountrycode": {
+        "type": "string"
+      },
+      "employmentstatusdesc": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "secondarynationalitycountrycode": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "nickname": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "genderdesc": {
+        "type": "string"
+      },
+      "topiaaccessflag": {
+        "type": "boolean"
+      },
+      "personid": {
+        "type": "integer"
+      },
+      "userdeactivatedflag": {
+        "type": "boolean"
+      },
+      "authmodedesc": {
+        "type": "string"
+      },
+      "forobfuscationflag": {
+        "type": "boolean"
+      },
+      "propertyname": {
+        "type": "string"
+      },
+      "showexceptiondebuginfoflag": {
+        "type": "boolean"
+      },
+      "nationalitycountryname": {
+        "type": "string"
+      },
+      "middlename": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ssousername": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "maritalstatuscode": {
+        "type": "string"
+      },
+      "employmentstatuscode": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "clientmailcode": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "preferredpronouncode": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "username": {
+        "type": "string",
+        "format": "email"
+      }
+    },
+    "required": [
+      "userpassword",
+      "authmodeprecedence",
+      "testuserflag",
+      "gendercode",
+      "businesstitle",
+      "emailaddress",
+      "lastnamefirst",
+      "lastname",
+      "firstname",
+      "maritalstatusdesc",
+      "authmodebitvalue",
+      "employeeid",
+      "nationalitycountrycode",
+      "genderdesc",
+      "personid",
+      "topiaaccessflag",
+      "personid",
+      "userdeactivatedflag",
+      "authmodedesc",
+      "propertyname",
+      "nationalitycountryname",
+      "username"
+    ]
+  }
+}
