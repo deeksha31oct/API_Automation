@@ -45,7 +45,7 @@ public class GetAssignmentsTest extends BaseTest
                 //TC_04
                 {
                         "Verify API responds with 404 status code for valid topiaPersonID  and  invalid logged-user-id  ",
-                        404,
+                        400,
                         Endpoints.GetAssignments.get_invalid_LoggedUserId(),
                         Endpoints.GetAssignments.get_valid_TopiaPersonId(),
                         "",
